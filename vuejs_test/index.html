@@ -1,0 +1,28 @@
+  <head>
+
+    <title>Vue.JS Tutorial</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div id="apps">
+      <h1 v-show="viewed"> im here</h1>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: '#apps',
+      data: {
+        message: 'Hello Vue World',
+        intro: "fuck ydd <small> dsfdsfdsfs</small>",
+        viewed: false
+
+      }
+    })
+  </script>
+</html>
